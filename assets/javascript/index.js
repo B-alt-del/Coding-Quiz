@@ -25,7 +25,7 @@ home_button.addEventListener('click', display_timer);
 function display_timer(){
     countdown = setInterval(function() {
 
-        timer.textContent = 'Timer:' + count;
+        timer.textContent = count;
             
         
             if (count === 0){
@@ -66,10 +66,14 @@ function to_highscores(){
     submit_score.addEventListener('click', function(){
         var Name = document.querySelector('input[type="text"]');
         var time_left = document.querySelector('#timer');
+        var number_of_scores = 0;
+        number_of_scores++;
+
         event.preventDefault();
 
         localStorage.setItem('Name', Name.value);
         localStorage.setItem('Score', time_left.textContent);
+        localStorage.setItem("#", number_of_scores);
 
         window.location.href="pages/highscores.html";
     })
