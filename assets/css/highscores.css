@@ -1,8 +1,22 @@
 #home_page div{
     display: flex;
+    width: 100%;
 }
 
 button{
     width: fit-content;
-    
+    align-items: center;
+    justify-content: center;
+
+}
+
+div{
+    display: flex;
+    width: auto;
+
+}
+
+p{
+    display: wrap;
+    width: 100%;
 }
