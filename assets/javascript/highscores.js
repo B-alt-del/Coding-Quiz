@@ -9,3 +9,7 @@ back.addEventListener("click", function(){
 clear.addEventListener("click", function(){
     console.log("clearing scores placeholder");
 })
+
+var score_local = document.querySelector('#score');
+
+score_local.textContent = localStorage.getItem('Score');

@@ -81,7 +81,13 @@ header{
 
 #highscores_page{
 
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin: 10% 15% 0 15%;
+    background-color: lightpink;
+    flex-direction: column;
     
 }
 
